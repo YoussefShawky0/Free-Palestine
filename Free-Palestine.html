@@ -1,0 +1,504 @@
+ -<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free palestine</title>
+    <link rel="icon" type="image/x-icon" href="..\\Free-Palestine\\Palestine-image\\Logo.png">
+    <link rel="stylesheet" href="../Free-Palestine/all.min.css">
+    <script src="Script.js"></script>
+</head>
+<body>
+    <style>
+        html{scroll-behavior: smooth;}
+        *{box-sizing: border-box;}
+
+        input[type=number], select {
+            width: 80%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+          }
+        input[type=email], select {
+            width: 80%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+          }
+          
+          input[type=submit] {
+            width: 50%;
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: medium;
+            font-weight: bold;
+          }
+          
+          input[type=submit]:hover {
+            background-color: #45a049;
+          }
+        input[type=text], select {
+          width: 80%;
+          padding: 12px 20px;
+          margin: 8px 0;
+          display: inline-block;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          box-sizing: border-box;
+        }
+        div.polaroid {
+          width: 400px;
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          text-align: left;
+        }
+        .Donate{
+          width: 140px;
+          padding: 5px;
+          border: 2px solid rgba(0, 0, 0, 0.995);
+          margin: 0;
+          cursor: pointer;
+        }
+        .Amount{
+          width: 100px;
+          padding: 8px;
+          border: 2px solid rgb(25, 18, 18);
+          margin: 0;
+          cursor: pointer;
+          background-color: rgb(169, 58, 58);
+        }
+        ul {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          overflow: hidden;
+          background-color: #333;
+        }
+        li {
+          float: right;
+        }
+        li a {
+          display: block;
+          font-size: 170%;
+          color: white;
+          text-align: center;
+          padding: 30px 26px;
+          text-decoration: none;
+        }
+        li a:hover {
+            background-color: #111;
+        }
+        .top img{
+            width: 30px;
+            height:30px;
+            margin-left: 2px;
+            margin-top: 2px;
+            border-radius: 50%;
+             }
+        .top{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: fixed;
+            bottom: -30px;
+            right: 30px;
+            width: 30px;
+            height: 30px;
+            z-index: 1;
+            transition: .5s;
+            opacity: 0;
+            }
+            .top.show{
+                right: 30px;
+                bottom: 72px;
+                opacity: 1;
+            
+            }
+            .About_Us{
+                width: 85%;
+                height: 570px;
+                margin: auto;
+                background-color: rgb(240, 240, 240);
+                padding: 20px;
+            }
+            .About_Us>h1{
+                text-align: center;   
+            }
+            .About_Us>p{
+                text-align: center;
+                width: 65%;
+                margin: auto;
+                font-size: 25px;
+            }
+             .About_Us .list p{
+                text-align: left;
+                margin: auto;
+                background-color: rgb(240, 240, 240);
+                font-size: 30px;
+                margin-top: -10px;
+                margin-bottom: -10px;
+                font-style: italic;
+
+            }
+            .list{
+                margin-top: 130px;
+            }
+            .list:nth-child(1){
+                font-weight: bold;
+            }
+
+
+            
+</style>
+</body>
+<body> 
+    <div class="top" id="top"><a href="#home"><img src="../Free-Palestine/Palestine-image/OIP.jpg" alt=""></a></div>
+        <ul id="home">
+            <li style="float:left">
+              <img src="../Free-Palestine/Palestine-image/Logo.png" height="100" width="100">
+            </li>
+            <li><a href="#donate">Donate</a></li>
+            <li><a href="#About_Us">About Us</a></li>
+            <li><a href="../Free-Palestine/News.html" target="_blank">News</a></li>
+            <li><a href="../Free-Palestine/Free-Palestine.html">Home</a></li>
+        </ul>
+        <table cellspacing="0" cellpadding="0" width="100%" >
+            <tr>
+                <th align="center" width="100%" >
+                    <img src="..\\Free-Palestine\\Palestine-image\\wp2632727-palestine-flag-wallpaper copy.jpg" alt="palestine" align="center" width="100%" height="450px"  >
+                </th>
+            </tr> 
+        </table>
+        <br>
+        <br>
+ <!-- malak -->
+ <table cellspaing="15" width=100% id="donate">
+    <tr>
+    <th align="center" ><font size="5" face="arial">Donate Money</font></th>
+    <th align="center" ><font size="5" face="arial">Donate Blood</font></th>
+    <th align="center" ><font size="5" face="arial">Donate Food</font></th>
+    <th align="center" ><font size="5" face="arial">Donate Clothes & Blankets</font></th>
+    </tr>
+    <tr>
+        <td align="center"><font size="4">Help Save Lives 100% of your donations <br></font>
+            <font size="4">will directly support Palestine refugees<br></font>
+        </td>
+        <td align="center"><font size="4">The Palestine Red Crescent Society asks for help<br></font>
+        <font size="4">foe those poor injured people<br></font></td>
+        <td align="center"><font size="4">There's no food left for them even bakeries<br></font>
+        <font size="4">are being bombed everyday<br></font></td>
+        <td align="center"><font size="4">People who's houses were bombed have no shelter<br></font>
+        <font size="4"> right now help them at least sleep warm <br></font></td>
+    </tr>
+    </table>
+    <br>
+    <table cellspaing="15" width=97%>
+    <tr>
+        <td align="center" valign="bottom"><a href="#form"><button class="Donate" type="button"><font size="4" face="calibri" color="Black"><b>Donate Now</b></font></button></a></td>
+        <td align="center" valign="bottom"><a href="https://www.palestinercs.org/en" target="_blank"><button class="Donate" type="button"><font size="4" face="calibri" color="Black"><b>Donate Now</b></font></button></a></td>
+        <td align="center" valign="bottom"><a href="https://www.efb.eg/programs/3075/aghath-aaagl-lahaly-ghz" target="_blank"><button class="Donate" type="button"><font size="4" face="calibri" color="Black"><b>Donate Now</b></font></button></a></td>
+        <td align="center" valign="bottom"><a href="https://resala.org/%D8%AC%D9%85%D8%B9%D9%8A%D8%A9-%D8%B1%D8%B3%D8%A7%D9%84%D8%A9-%D8%AA%D9%82%D9%88%D9%85-%D8%A8%D8%AA%D8%AC%D9%87%D9%8A%D8%B2-%D9%82%D8%A7%D9%81%D9%84%D8%A9-%D9%85%D8%B3%D8%A7%D8%B9%D8%AF%D8%A7%D8%AA/" target="_blank"><button class="Donate" type="button"><font size="4" face="calibri" color="Black"><b>Donate Now</b></font></button></a></td>
+    </tr>
+    </table>
+  </table>
+  <br>
+  <br>
+  <!-- yahia -->
+  <table>
+    <tr><td>
+        <td width="30%"></td>
+        <table width="85%" border="0" align="center" cellpadding="15px" bgcolor="f0f0f0">
+            <tr>
+                <td width="1.5%"></td>
+                <td width="2">
+                    <h1><font size="6" face="" align="center">Palestine Needs To Be Free!</font></h1>
+                    <div class="polaroid"><img src="../Free-Palestine/Palestine-image/wallpaperflare-cropped.jpg" alt="" width="400px" height="620px"></div>
+                </td>
+                <td valign="top"><br><br><br><br><br>
+                    <font size="5">Violence has escalated in Palestine after months of ongoing tension across the region. In Gaza specifically, over six thousand people — including children — have been killed, thousands more have been injured, and hundreds of thousands have been forced to flee. A ‘total blockade’ is in place, completely cutting off two million residents from access to food, electricity, and fuel. And while some aid trucks were able to cross in from Egypt on Oct. 21, it is no where near enough, and many of the most-needed items were still not allowed in.</font><br><br> 
+                    <font size="5">Civilians are paying a horrific price for the escalation of hostilities between Israeli forces and Palestinian armed groups.
+                        Some 2.1 million people in the Gaza Strip and the West Bank need urgent humanitarian aid and protection.
+                        You can help families caught up in this catastrophic situation.</font><br><br>
+
+                    <h1><font>We Need YOUR Help!</font></h1>
+                    <font size="5">Thanks to you, we’ve been able to accomplish so much. But there’s still so much more to do. By continuing to support our efforts in Palestine, you can help make a difference in the lives of those in desperate need.</font>
+                </td>
+            </tr>
+        </table>
+    </td></tr>
+
+</table>
+<br>
+<br>
+
+<!-- malak -->
+
+<table align="center" cellspaing="15" width=50% >
+   
+    <th align="center" colspan="6"><font size="6">Quick Donations</font></th>
+
+ </table>
+ <br>
+ <br>
+ <br>
+ <table align="center" cellspaing="15" width=50%>
+    <th align="center" ><button class="Amount" type="button" onclick="alert('Donated Successfully')"><font size="4" color="ffffff">50 EGP</font></button></th>
+    <th align="center" ><button class="Amount" type="button" onclick="alert('Donated Successfully')"><font size="4" color="ffffff">100 EGP</font></button></th>   
+    <th align="center" ><button class="Amount" type="button" onclick="alert('Donated Successfully')"><font size="4" color="ffffff">150 EGP</font></button></th>
+    <th align="center" ><button class="Amount" type="button" onclick="alert('Donated Successfully')"><font size="4" color="ffffff">200 EGP</font></button></th>
+    <th align="center" valign="bottom"><div><input type="text" placeholder="Enter Amount "></div></th>
+ </table>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <hr>
+ <!-- form -->
+<table width="85%" cellspacing="0" cellpadding="0" bgcolor="f0f0f0" align="center" id="form">
+
+    <form  method="post">
+        <tr align="center">
+            <td colspan="5">
+                <h1 align="center">Enter your information</h1>
+            </td>
+        </tr>
+    </tr>
+    <tr>
+        <td>
+            <br>
+        </td>
+    </tr>
+        <tr>
+            <td width="5%"></td>
+            <td>
+                <label  for="fname">First Name:&nbsp;</label>
+                <input  type="text" id="fname" name="fname" placeholder="First Name" required >
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <br>
+            </td>
+        </tr>
+        <tr>
+            <td width="5%"></td>
+            <td>
+                <label  for="lname">Last Name:&nbsp;</label>
+                <input  type="text" id="lname" name="lname" placeholder="Last Name" required>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <br>
+            </td>
+        </tr>
+        <tr>
+            <td width="5%"></td>
+            <td>
+                <label  for="Email">Email:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                <input  type="email" id="Email" name="Email" placeholder="Email" required>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <br>
+            </td>
+        </tr>
+        <tr>
+            <td width="5%"></td>
+            <td>
+                <label  for="Address">Address:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                <input  type="text" id="Address" name="Address" placeholder="Address" required>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <br>
+            </td>
+        </tr>
+        <tr>
+            <td width="5%"></td>
+            <td>
+                <label  for="City">City:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                <select id="City" required>
+                    <option value="City">Select a  city</option>
+                    <!-- Egypt -->
+                    <option value="Cairo">Cairo</option>
+                    <option value="Ismailia">Ismailia</option>
+                    <option value="Alexandria">Alexandria</option>
+                    <option value="Giza">Giza</option>
+                    <!-- United Arab Emirates -->
+                    <option value="Dubai">Dubai</option>
+                    <option value="Abu Dhabi">Abu Dhabi</option>
+                    <option value="Sharjah">Sharjah</option>
+                    <!-- Saudi Arabia -->
+                    <option value="Riyadh">Riyadh</option>
+                    <option value="Jeddah">Jeddah</option>
+                    <option value="Mecca">Mecca</option>
+                    <!-- Iraq -->
+                    <option value="Baghdad">Baghdad</option>
+                    <option value="Basra">Basra</option>
+                    <option value="Erbil">Erbil</option>
+                    <!-- Kuwait -->
+                    <option value="Kuwait City">Kuwait City</option>
+                    <option value="Hawalli">Hawalli</option>
+                    <option value="Ahmadi">Ahmadi</option>
+                    <!-- Jordan -->
+                    <option value="Amman">Amman</option>
+                    <option value="Zarqa">Zarqa</option>
+                    <option value="Irbid">Irbid</option>
+                    <!-- Lebanon -->
+                    <option value="Beirut">Beirut</option>
+                    <option value="Tripoli">Tripoli</option>
+                    <option value="Sidon">Sidon</option>
+                    <!-- Morocco -->
+                    <option value="Casablanca">Casablanca</option>
+                    <option value="Rabat">Rabat</option>
+                    <option value="Marrakech">Marrakech</option>
+                    <!-- Qatar -->
+                    <option value="Doha">Doha</option>
+                    <option value="Al Rayyan">Al Rayyan</option>
+                    <option value="Umm Salal">Umm Salal</option>
+                    <!-- Syria -->
+                    <option value="Damascus">Damascus</option>
+                    <option value="Aleppo">Aleppo</option>
+                    <option value="Homs">Homs</option>
+                    <!-- Tunisia -->
+                    <option value="Tunis">Tunis</option>
+                    <option value="Sfax">Sfax</option>
+                    <option value="Sousse">Sousse</option>
+                    <!-- Yemen -->
+                    <option value="Sana'a">Sana'a</option>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <br>
+            </td>
+        </tr>
+        <tr>
+            <td width="5%"></td>
+            <td>
+                <label  for="Postal code">Postal Code:</label>
+                <input  type="number" id="Postal Code" name="Postal Code" placeholder="Postal Code" required >
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <br>
+            </td>
+        </tr>
+        <tr>
+            <td width="5%"></td>
+            <td>
+                <label  for="Country">Country:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                <select id="Country">
+                    <option value="Country">Select a country</option>
+                    <option value="EG">Egypt</option>
+                    <option value="SA">Saudi Arabia</option>
+                    <option value="AE">United Arab Emirates</option>
+                    <option value="IQ">Iraq</option>
+                    <option value="KW">Kuwait</option>
+                    <option value="JO">Jordan</option>
+                    <option value="LB">Lebanon</option>
+                    <option value="MA">Morocco</option>
+                    <option value="QA">Qatar</option>
+                    <option value="SY">Syria</option>
+                    <option value="TN">Tunisia</option>
+                    <option value="YE">Yemen</option>
+                  </select>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <br>
+            </td>
+        </tr>
+        <tr>
+            <td width="5%"></td>
+            <td>
+                <label  for="Amount">Amount:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                <input type="number" id="Amount" min="0" name="money" placeholder="Enter amount" required>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <br>
+            </td>
+        </tr>
+        <tr>
+            <td width="5%"></td>
+            <td>
+                <label  for="Currency">Currency:&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                <select id="Currency">
+                    <option value="Currency">Select a currency</option>
+                    <option value="EGP">EGP</option>
+                    <option value="USD">USD</option>                
+                </select>    
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <br>
+            </td>
+        </tr>
+        
+        <td width="5%"></td>
+        <td align="center">
+            <input type="submit" value="Submit">
+        </td>
+        <td width="5%"></td>
+    </tr>
+</form>
+</table>
+<hr>
+<!-- /form -->
+<div class="About_Us" id="About_Us">
+    <h1>
+        About Us
+    </h1>
+    <p>
+        We are a group of young people who decided to support our people and be one hand and help our people until they return to their best condition and overcome the occupying entity. Therefore, we decided to create this page to help our people in Gaza and spread awareness to the world of Palestine’s right to be independent.
+    </p> 
+    <div class="list">
+        <h1>Team:</h1>
+        <p>Youssef Shawky</p><br>
+        <p>Yahia Mohamed</p><br>
+        <p>Youmna Mohamed</p><br>
+        <p>Malak Basem</p><br>
+    </div>
+</div>
+<table border="0" bgcolor="333333" width="100%" height="50" cellspaing="0">
+   <tr><td>
+       <table>
+           <tr>
+               <td width="180%"><p style="color: azure;" valgin="bottom">&copy copyright</p></td>
+               <td> 
+                   <img src="../Free-Palestine/Palestine-image/facebook.png" width="20px" height="20px">
+               </td>
+               <td>
+                   <img src="../Free-Palestine/Palestine-image/instagram.png" width="20px" height="20px">
+               </td>
+               <td>
+                   <img src="../Free-Palestine/Palestine-image/youtube.png" width="20px" height="20px">
+               </td>
+               <td>
+                   <img src="../Free-Palestine/Palestine-image/twitter.png" width="20px" height="20px">
+               </td>
+           </tr>
+       </table>
+   </td></tr>
+</table>
+</body>
+</html>
