@@ -2,7 +2,7 @@ let span = document.getElementById("top");
 
 window.onscroll = function() {
 
-     console.log(this.scrollY);
+    //  console.log(this.scrollY);
 
     if (this.scrollY >= 600) {
 
